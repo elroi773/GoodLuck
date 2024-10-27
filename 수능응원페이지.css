@@ -4,15 +4,30 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #fffefc;
+}
 h1{
-    padding-top: 30px;
+    padding-top: 70px;
     font-family: 'TTBookendBatangR';
     text-align: center;
     font-size: 30px;
 }
 
 #countdown {
-    font-size: 2em;
+    font-size: 3em;
     color: #eda92e;
     text-align: center;
     margin-top: 20px;
@@ -38,4 +53,76 @@ h1{
   .animated-text {
     animation: fadeInUpSmooth 3.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
  }
- 
+
+ h2 {
+    font-family: 'S-CoreDream-3Light';
+    color: #c98d5d;
+    font-size: 2em;
+  }
+  
+  #checklist {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-family: 'S-CoreDream-3Light';
+    color:#855833;
+    margin: 10px 0;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  
+  button {
+    font-family: 'S-CoreDream-3Light';
+    background-color: #B5a28a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #897a68;
+  }
+  
+  #progressMessage {
+    font-family: 'S-CoreDream-3Light';
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #333;
+  }
+
+  .check_container{
+    width: 170px;
+    height: 150px;
+  }
+
+  .cherrup{
+    float: right;
+    font-size: 13px;
+    padding-right: 5px;
+    padding-bottom: 40px;
+    font-family: 'GowunBatang-Regular';
+  }
