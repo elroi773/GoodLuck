@@ -7,10 +7,49 @@
     <link rel="stylesheet" href="수능응원페이지.css">
 </head>
 <body>
+    <!--더 추가사항
+    1. 체크리스트 필수품 
+    2. 수험날 잘 먹는 도시락 
+    3. 대학교 리스트 
+    4. 잘 볼 수 있다 라는 선배들의 응원 
+    5. 명언들 
+    6. 수능 응원 노래 
+    7. 할 수 있다 
+    8. 못한다면 다음 기회가 있다. 
+    9. 나는 응원한다 라는 메세지
+    10. 성경 말씀 
+    11. 잘할꺼고 잘 해낼 거고 응원 티비 
+    // 핸드폰 크기로 만들기  -->
     <h1>당신의 첫 도전을 응원합니다.</h1>
     <div id="countdown" class="animated-text"></div>
-    <a>뭘해야 당신들이 힘이 날까</a>
-    <script src="수능응원페이지.js"></script>
 
+    <h2>수능 체크리스트</h2>
+
+    <div class = "check_container">
+        <div id="checklist">
+            <ul>
+            <li><input type="checkbox" id="idCard"> <label for="idCard">신분증</label></li>
+            <li><input type="checkbox" id="examTicket"> <label for="examTicket">수험표</label></li>
+            <li><input type="checkbox" id="stationery"> <label for="stationery">검정색 볼펜 <br>및 샤프</label></li>
+            <li><input type="checkbox" id="watch"> <label for="watch">아날로그시계</label></li>
+            <li><input type="checkbox" id="snacks"> <label for="snacks">간단한 간식 및 음료</label></li>
+            <li><input type="checkbox" id="mask"> <label for="mask">마스크 및 손 소독제</label></li>
+            <li><input type="checkbox" id="medicine"> <label for="medicine">약 (필요한 경우)</label></li>
+            <li><input type="checkbox" id="money"> <label for="money">비상용 현금</label></li>
+            </ul>
+            <button onclick="checkProgress()">준비 상황 확인</button>
+            <p id="progressMessage"></p>
+        </div>
+    </div>
+    <div class = "cherrup">
+        <p>          잘 해왔고, 잘하고 있어<br>
+                 그리고 앞으로도 잘 해낼 거야<br>
+            다른 누구도 아니라 당신이라서 꼭.<br><br>
+            당신을 안아줄게요 - 김지훈 中<br></p>
+    </div>
+    
+    
+    <script src="수능응원페이지.js"></script>
+    
 </body>
 </html>
