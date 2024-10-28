@@ -19,36 +19,86 @@
     9. 나는 응원한다 라는 메세지
     10. 성경 말씀 
     11. 잘할꺼고 잘 해낼 거고 응원 티비 
+    12. 운세 뽑기 
+    13. 한강물 온도 
+
     // 핸드폰 크기로 만들기  -->
-    <h1>당신의 첫 도전을 응원합니다.</h1>
-    <div id="countdown" class="animated-text"></div>
+    <div class="check_container">
 
-    <h2>수능 체크리스트</h2>
+        <h1>당신의 첫 도전을 응원합니다.</h1>
 
-    <div class = "check_container">
-        <div id="checklist">
-            <ul>
-            <li><input type="checkbox" id="idCard"> <label for="idCard">신분증</label></li>
-            <li><input type="checkbox" id="examTicket"> <label for="examTicket">수험표</label></li>
-            <li><input type="checkbox" id="stationery"> <label for="stationery">검정색 볼펜 <br>및 샤프</label></li>
-            <li><input type="checkbox" id="watch"> <label for="watch">아날로그시계</label></li>
-            <li><input type="checkbox" id="snacks"> <label for="snacks">간단한 간식 및 음료</label></li>
-            <li><input type="checkbox" id="mask"> <label for="mask">마스크 및 손 소독제</label></li>
-            <li><input type="checkbox" id="medicine"> <label for="medicine">약 (필요한 경우)</label></li>
-            <li><input type="checkbox" id="money"> <label for="money">비상용 현금</label></li>
-            </ul>
-            <button onclick="checkProgress()">준비 상황 확인</button>
-            <p id="progressMessage"></p>
+        <div>
+            <div id="countdown" class="countdown">D-17</div>
+            <h2>수능 체크리스트</h2>
+    
+            <div id="checklist">
+                <ul>
+                    <li><input type="checkbox" id="idCard"> <label for="idCard">신분증</label></li>
+                    <li><input type="checkbox" id="examTicket"> <label for="examTicket">수험표</label></li>
+                    <li><input type="checkbox" id="stationery"> <label for="stationery">검정색 볼펜 <br>및 샤프</label></li>
+                    <li><input type="checkbox" id="watch"> <label for="watch">아날로그시계</label></li>
+                    <li><input type="checkbox" id="snacks"> <label for="snacks">간단한 간식 및 음료</label></li>
+                    <li><input type="checkbox" id="mask"> <label for="mask">마스크 및 손 소독제</label></li>
+                    <li><input type="checkbox" id="medicine"> <label for="medicine">약 (필요한 경우)</label></li>
+                    <li><input type="checkbox" id="money"> <label for="money">비상용 현금</label></li> 
+                </ul>
+                <button onclick="checkProgress()">준비 상황 확인</button>
+                <p id="progressMessage"></p>
+            </div>
         </div>
-    </div>
-    <div class = "cherrup">
-        <p>          잘 해왔고, 잘하고 있어<br>
-                 그리고 앞으로도 잘 해낼 거야<br>
-            다른 누구도 아니라 당신이라서 꼭.<br><br>
-            당신을 안아줄게요 - 김지훈 中<br></p>
+        <div class = "message">
+            <p>
+                잘 해왔고 잘하고 있어 <br>
+                그리고 앞으로도 잘 해낼거야<br>
+                다른 누구도 아니라 너라서. <br><br>
+                그러니까 나는 너를 믿어.<br><br>
+                당신의 마음을 안아줄게요 - 김지훈 中
+            </p>
+        </div>
+        <div class = "container">
+            <div class = "post-input">
+                <textarea id = "postText" rows = "4" placeholder="응원의 한마디 해주세요!"></textarea>
+            </div>
+            <button onclick="addPost()">게시하기</button>
+            <ul id = "postList" class = "post-list"></ul>
+        </div>
+        <br>
+        <br>
+        <div class="cards-container">
+    
+            <div class="card-container" onclick="flipCard(this)">
+                <div class="card">
+                    <div class="card-front">
+                        <img src = "images/y.png" id = "y">
+                    </div>
+                    <div class="card-back" id = "yo">진리가 너희를 자유케 하리라</div>
+                </div>
+            </div>
+            
+           
+            <div class="card-container" onclick="flipCard(this)">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="/images/seoulunivers.png" alt="서울대" id = "s">
+                    </div>
+                    <div class="card-back" id = "se">누군가 조국의 미래를 묻거든<br>고개를 들어 관악을 보게 하라</div>
+                </div>
+            </div>
+            
+            
+            <div class="card-container" onclick="flipCard(this)">
+                <div class="card">
+                    <div class="card-front">
+                        <img src = "images/gouiversity.jpg" id = "g">
+                    </div>
+                    <div class="card-back" id = "go">너의 젊음을 고대에게 걸어라<br>고대는 너에게 세계를 걸겠다</div>
+                </div>
+            </div>
+        </div>
+        
     </div>
     
-    
+    <br>
     <script src="수능응원페이지.js"></script>
     
 </body>
