@@ -28,23 +28,27 @@
         <h1>당신의 첫 도전을 응원합니다.</h1>
 
         <div>
-            <div id="countdown" class="countdown">D-17</div>
-            <h2>수능 체크리스트</h2>
+            <div id="countdown" class="countdown">D-16</div>
+            
+            <div class = "check">
+                <h2>수능 체크리스트</h2>
     
-            <div id="checklist">
-                <ul>
-                    <li><input type="checkbox" id="idCard"> <label for="idCard">신분증</label></li>
-                    <li><input type="checkbox" id="examTicket"> <label for="examTicket">수험표</label></li>
-                    <li><input type="checkbox" id="stationery"> <label for="stationery">검정색 볼펜 <br>및 샤프</label></li>
-                    <li><input type="checkbox" id="watch"> <label for="watch">아날로그시계</label></li>
-                    <li><input type="checkbox" id="snacks"> <label for="snacks">간단한 간식 및 음료</label></li>
-                    <li><input type="checkbox" id="mask"> <label for="mask">마스크 및 손 소독제</label></li>
-                    <li><input type="checkbox" id="medicine"> <label for="medicine">약 (필요한 경우)</label></li>
-                    <li><input type="checkbox" id="money"> <label for="money">비상용 현금</label></li> 
-                </ul>
-                <button onclick="checkProgress()">준비 상황 확인</button>
-                <p id="progressMessage"></p>
+                <div id="checklist">
+                    <ul>
+                        <li><input type="checkbox" id="idCard"> <label for="idCard">신분증</label></li>
+                        <li><input type="checkbox" id="examTicket"> <label for="examTicket">수험표</label></li>
+                        <li><input type="checkbox" id="stationery"> <label for="stationery">검정색 볼펜 <br>및 샤프</label></li>
+                        <li><input type="checkbox" id="watch"> <label for="watch">아날로그시계</label></li>
+                        <li><input type="checkbox" id="snacks"> <label for="snacks">간단한 간식 및 음료</label></li>
+                        <li><input type="checkbox" id="mask"> <label for="mask">마스크 및 손 소독제</label></li>
+                        <li><input type="checkbox" id="medicine"> <label for="medicine">약 (필요한 경우)</label></li>
+                        <li><input type="checkbox" id="money"> <label for="money">비상용 현금</label></li> 
+                    </ul>
+                    <button onclick="checkProgress()">준비 상황 확인</button>
+                    <p id="progressMessage"></p>
+                </div>
             </div>
+            
         </div>
         <div class = "message">
             <p>
@@ -55,47 +59,11 @@
                 당신의 마음을 안아줄게요 - 김지훈 中
             </p>
         </div>
-        <div class = "container">
-            <div class = "post-input">
-                <textarea id = "postText" rows = "4" placeholder="응원의 한마디 해주세요!"></textarea>
-            </div>
-            <button onclick="addPost()">게시하기</button>
-            <ul id = "postList" class = "post-list"></ul>
-        </div>
         <br>
         <br>
-        <div class="cards-container">
-    
-            <div class="card-container" onclick="flipCard(this)">
-                <div class="card">
-                    <div class="card-front">
-                        <img src = "images/y.png" id = "y">
-                    </div>
-                    <div class="card-back" id = "yo">진리가 너희를 자유케 하리라</div>
-                </div>
-            </div>
-            
-           
-            <div class="card-container" onclick="flipCard(this)">
-                <div class="card">
-                    <div class="card-front">
-                        <img src="/images/seoulunivers.png" alt="서울대" id = "s">
-                    </div>
-                    <div class="card-back" id = "se">누군가 조국의 미래를 묻거든<br>고개를 들어 관악을 보게 하라</div>
-                </div>
-            </div>
-            
-            
-            <div class="card-container" onclick="flipCard(this)">
-                <div class="card">
-                    <div class="card-front">
-                        <img src = "images/gouiversity.jpg" id = "g">
-                    </div>
-                    <div class="card-back" id = "go">너의 젊음을 고대에게 걸어라<br>고대는 너에게 세계를 걸겠다</div>
-                </div>
-            </div>
-        </div>
-        
+        <br>
+        <br>
+        <iframe src = "수능대학교.html"></iframe>
     </div>
     
     <br>
