@@ -24,11 +24,16 @@
 
     // 핸드폰 크기로 만들기  -->
     <div class="check_container">
-
-        <h1>당신의 첫 도전을 응원합니다.</h1>
+        <!-- 이름이 들어갈 부분 -->
+        <br>
+        <h1 id="greeting">당신의 첫 도전을 응원합니다.</h1>
 
         <div>
-            <div id="countdown" class="countdown">D-16</div>
+    <div class="check_container">
+
+
+        <div>
+            <div id="countdown" class="countdown"></div>
             
             <div class = "check">
                 <h2>수능 체크리스트</h2>
@@ -50,6 +55,8 @@
             </div>
             
         </div>
+        <br>
+        <br>
         <div class = "message">
             <p>
                 잘 해왔고 잘하고 있어 <br>
@@ -63,7 +70,33 @@
         <br>
         <br>
         <br>
-        <iframe src = "수능대학교.html"></iframe>
+
+        <div class="cards-container">
+            <div class="card-container" onclick="flipCard(this)" id="yeon">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="images/y.png" id="y">
+                    </div>
+                    <div class="card-back" id="yo">진리가 너희를 자유케 하리라</div>
+                </div>
+            </div>
+            <div class="card-container" onclick="flipCard(this)" id="seoul">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="images/seoulunivers.png" alt="서울대" id="s">
+                    </div>
+                    <div class="card-back" id="se">누군가 조국의 미래를 묻거든<br>고개를 들어 관악을 보게 하라</div>
+                </div>
+            </div>
+            <div class="card-container" onclick="flipCard(this)" id="goo">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="images/gouiversity.jpg" id="g">
+                    </div>
+                    <div class="card-back" id="go">너의 젊음을 고대에게 걸어라<br>고대는 너에게 세계를 걸겠다</div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <br>
