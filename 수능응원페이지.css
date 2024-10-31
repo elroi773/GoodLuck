@@ -40,7 +40,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200vh;
+  height: 250vh;
 }
 
 .check_container {
@@ -67,6 +67,8 @@ h1 {
 }
 
 h2 {
+  animation: fadeInEffect 2s ease-out forwards;
+  animation-delay: 1s;
   font-family: 'TTBookendBatangR';
   color: #c98d5d;
   font-size: 2em;
@@ -74,6 +76,8 @@ h2 {
 }
 
 #checklist {
+  animation: fadeInEffect 2s ease-out forwards;
+  animation-delay: 1s;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -131,7 +135,6 @@ button:hover {
 
   
   .cherrup{
-
     font-size: 13px;
     padding-right: 5px;
     padding-bottom: 40px;
@@ -167,6 +170,8 @@ button:hover {
     text-align: center;
  }
  .cards-container {
+  animation: fadeInEffect 2s ease-out forwards;
+  animation-delay: 1s;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -263,3 +268,36 @@ button:hover {
   }
 }
 
+@keyframes fadeInEffect {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+p{
+  animation: fadeInEffect 2s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.pwise{
+  font-family: 'Gyeonggi_Batang_Regular';
+}
+.author{
+  font-family: 'Gyeonggi_Batang_Regular';
+}
+
+h4{
+  color: #382311;
+  font-family: 'TTBookendBatangR';
+  animation: fadeInEffect 2s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.newp{
+  font-family: 'TTBookendBatangR';
+}
