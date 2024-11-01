@@ -40,7 +40,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300vh;
+  height: 400vh;
 }
 
 .check_container {
@@ -109,7 +109,8 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width:200px;
-  height: 280px;
+  height: 300px;
+  
 }
 
 ul {
@@ -347,6 +348,7 @@ h3{
 #message {
   animation: fadeInEffect 2s ease-out forwards;
   animation-delay: 1s;
+  padding-top:30px
 }
 
 .menu-container {
@@ -355,7 +357,6 @@ h3{
   gap: 20px;
 }
 
-/* 각 카테고리 섹션 */
 .menu-section {
   width: calc(50% - 20px); /* 두 줄로 배치 */
   box-sizing: border-box;
@@ -375,5 +376,10 @@ h3{
 }
 
 .menu-section ul li {
+  text-align: center;
   margin: 5px 0;
+}
+
+.href{
+  padding-bottom:30px
 }
