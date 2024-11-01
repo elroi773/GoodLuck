@@ -80,3 +80,46 @@ const examDate = new Date('2024-11-14T00:00:00');
             document.getElementById("quote").textContent = quotes[randomIndex].text;
             document.getElementById("author").textContent = quotes[randomIndex].author;
         }
+
+        document.querySelector('.button').addEventListener('click', function () {
+            var audio = document.getElementById('audio-player');
+
+            // 페이드 인 함수
+            function fadeIn(audio, duration) {
+                audio.volume = 0; // 볼륨을 0으로 시작
+                audio.play();
+                
+                let step = 0.01; // 볼륨 증가 단계
+                let interval = duration / (1 / step); // 페이드 인 속도 조절
+
+                let fadeInterval = setInterval(function () {
+                    if (audio.volume < 1) {
+                        audio.volume = Math.min(1, audio.volume + step); // 볼륨 증가
+                    } else {
+                        clearInterval(fadeInterval); // 최대 볼륨에 도달하면 멈춤
+                    }
+                }, interval);
+            }
+
+            // 페이드 아웃 함수
+            function fadeOut(audio, duration) {
+                let step = 0.01; // 볼륨 감소 단계
+                let interval = duration / (1 / step); // 페이드 아웃 속도 조절
+
+                let fadeInterval = setInterval(function () {
+                    if (audio.volume > 0) {
+                        audio.volume = Math.max(0, audio.volume - step); // 볼륨 감소
+                    } else {
+                        audio.pause();
+                        clearInterval(fadeInterval); // 볼륨이 0에 도달하면 멈춤
+                    }
+                }, interval);
+            }
+
+            // 오디오 상태에 따라 페이드 인 또는 페이드 아웃 실행
+            if (audio.paused) {
+                fadeIn(audio, 2000); // 2초 동안 페이드 인
+            } else {
+                fadeOut(audio, 2000); // 2초 동안 페이드 아웃
+            }
+        });
