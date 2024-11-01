@@ -40,7 +40,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250vh;
+  height: 300vh;
 }
 
 .check_container {
@@ -56,6 +56,32 @@ h1 {
   font-family: 'TTBookendBatangR';
   font-size: 30px;
   color: #382311;
+}
+
+
+.button {
+  size: 300px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  background: linear-gradient(45deg, #c7ae69, #e7dd93);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: rgb(250, 255, 192);
+  font-size: 18px;
+  font-family: 'Gowun Batang', serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background: linear-gradient(45deg, rgb(121, 127, 38), #8e7923);
+  transform: translateY(-3px);
+}
+
+.button:active {
+  transform: translateY(1px);
 }
 
 #countdown {
@@ -107,7 +133,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-button {
+.checkbutton {
   font-family: 'S-CoreDream-3Light';
   background-color: #B5a28a;
   color: white;
@@ -122,7 +148,7 @@ button {
   padding-bottom: 20px;
 }
 
-button:hover {
+.checkbutton:hover {
   background-color: #897a68;
 }
 
@@ -162,7 +188,8 @@ button:hover {
   }
   
   .countdown {
-    animation: fadeInUpSmooth 3.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation: fadeInEffect 2s ease-out forwards;
+    animation-delay: 1s;
  }
 
  :placeholder-shown{
@@ -282,6 +309,7 @@ button:hover {
 p{
   animation: fadeInEffect 2s ease-out forwards;
   animation-delay: 1s;
+
 }
 
 .pwise{
@@ -292,7 +320,7 @@ p{
 }
 
 h4{
-  color: #382311;
+  color: #c98d5d;
   font-family: 'TTBookendBatangR';
   animation: fadeInEffect 2s ease-out forwards;
   animation-delay: 1s;
@@ -300,4 +328,23 @@ h4{
 
 .newp{
   font-family: 'TTBookendBatangR';
+}
+
+.button{
+  animation: fadeInEffect 2s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.container{
+  animation: fadeInEffect 2s ease-out forwards;
+  animation-delay: 1s;
+}
+
+h3{
+  color:#c98d5d;
+}
+
+#message {
+  animation: fadeInEffect 2s ease-out forwards;
+  animation-delay: 1s;
 }
