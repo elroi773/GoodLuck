@@ -19,8 +19,27 @@
         <!-- 이름이 들어갈 부분 -->
         <br>
         <h1 id="greeting">당신의 첫 도전을 응원합니다.</h1>
+        <button class="button">Play Music</button>
+        <audio id="audio-player" class="audio-player" preload="none">
+            <source src="audio/goodluck!.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    
+        <p class = "message">
+            행운을 빌어줘 - 원필 中<br><br>
+            앞으로 총 몇 번의 몇 번의 행운과<br>
+            그리고 또 몇 번의 몇 번의 절망과<br>
+            차가운 웃음 혹은 기쁨의 눈물을<br>
+            맛보게 될지는 모르겠지만<br><br>
+            아무쪼록 행운을 빌어 줘<br>
+            내 앞길에 행복을 빌어 줘<br>
+            계절이 흘러 되돌아오면<br>
+            더 나은 내가 되어 있을 테니<br>
+            <br>
+            기대해 줘<br>
 
-        <div>
+
+        </p>
     <div class="check_container">
         <div>
             <div id="countdown" class="countdown"></div>
@@ -39,7 +58,7 @@
                         <li><input type="checkbox" id="medicine"> <label for="medicine">약 (필요한 경우)</label></li>
                         <li><input type="checkbox" id="money"> <label for="money">비상용 현금</label></li> 
                     </ul>
-                    <button onclick="checkProgress()">준비 상황 확인</button>
+                    <button onclick="checkProgress()" class = "checkbutton">준비 상황 확인</button>
                     <p id="progressMessage"></p>
                 </div>
             </div>
@@ -100,24 +119,26 @@
     <br>
     <div class="container">
         <h1 class = "wise_saying">랜덤 글귀</h1>
-        <p id="quote" class = "pwise">명언을 보려면 아래 버튼을 누르세요!</p>
+        <p id="quote" class = "pwise">랜덤 글귀로 내일 운세를 점 쳐보세요!</p>
         <p id="author" class="author" class = "pwise"></p>
-        <button onclick="generateQuote()" class = "newp">새 명언 보기</button>
+        <button onclick="generateQuote()" class = "checkbutton">새 글귀 보기</button>
     </div>
     <br>
     <br>
     <br>
     <br>
     <div class = "message">
-        <h3>이 페이지에 대하여..</h3>
-        <p>
+        <h3 id="title">이 페이지에 대하여..</h3>
+        <p id="message">
             저는 고등학교 1학년 개발자 입니다<br>
-            지금 인생에서 최고로 큰 시험을 앞두고 있을 언니 오빠들이 생각이 나서<br>
-            이렇게 사이트를 개발하게 되었습니다.<br>
-            이렇게나마 응원이 되었으면 좋겠습니다!<br><br>
-            지난 12년을 위해 공부 하신 언니 오빠들 수고 하셨습니다!<br>
-            내일 후회없이 풀고 오길 기도하겠습니다!
-
+            지금 인생에서 최고로 큰 시험을 앞두고 있을,<br><br>
+            언니 오빠들을 진심으로 응원하고 싶어<br>
+            이 페이지를 개발하게 되었습니다.<br>
+            이렇게나마 응원이 되었으면 좋겠네요!!<br><br>
+            지난 12년을 위해 공부 하신 언니 오빠들 수고 하셨습니다<br>
+            내일 후회 없이 풀고 오길 진심으로 응원하고 기도하겠습니다!
+            <br><br>
+            화이팅!
         </p>
     </div>
     <script src="수능응원페이지.js"></script>
