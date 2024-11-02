@@ -348,7 +348,9 @@ h3{
 #message {
   animation: fadeInEffect 2s ease-out forwards;
   animation-delay: 1s;
-  padding-top:30px
+  padding-top:30px;
+  font-size: 10px;
+  display: none;
 }
 
 .menu-container {
@@ -357,8 +359,15 @@ h3{
   gap: 20px;
 }
 
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 두 줄로 배치 */
+  gap: 20px;
+  justify-items: center; /* 각 섹션을 가운데 정렬 */
+}
+
 .menu-section {
-  width: calc(50% - 20px); /* 두 줄로 배치 */
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -366,6 +375,7 @@ h3{
 .menu-section h4 {
   margin-bottom: 10px;
   font-size: 1.2em;
+  text-align: center; /* 섹션 제목도 가운데 정렬 */
 }
 
 /* 리스트 스타일 */
@@ -373,12 +383,13 @@ h3{
   list-style-type: none;
   padding: 0;
   margin: 0;
+  text-align: center; /* 리스트 가운데 정렬 */
 }
 
 .menu-section ul li {
-  text-align: center;
   margin: 5px 0;
 }
+
 
 .href{
   padding-bottom:30px
