@@ -123,3 +123,16 @@ const examDate = new Date('2024-11-14T00:00:00');
                 fadeOut(audio, 2000); // 2초 동안 페이드 아웃
             }
         });
+
+        document.getElementById("toggleButton").onclick = function() {
+            var message = document.getElementById("message");
+            var button = document.getElementById("toggleButton");
+            
+            if (message.style.display === "none") {
+                message.style.display = "block";
+                button.textContent = "-"; // 버튼 텍스트를 -로 변경
+            } else {
+                message.style.display = "none";
+                button.textContent = "+"; // 버튼 텍스트를 +로 변경
+            }
+        };
