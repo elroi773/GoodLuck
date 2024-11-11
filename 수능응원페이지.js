@@ -136,3 +136,29 @@ const examDate = new Date('2024-11-14T00:00:00');
                 button.textContent = "+"; // 버튼 텍스트를 +로 변경
             }
         };
+
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.parentElement;
+                category.classList.toggle('active');
+                
+                // aria-expanded 속성 업데이트
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', !isExpanded);
+            });
+        });
+
+        document.querySelectorAll('.toggle_button').forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.parentElement;
+                category.classList.toggle('active');
+
+                // 아이콘 변경 (화살표 회전)
+                const icon = button.querySelector('.icon');
+                if (category.classList.contains('active')) {
+                    icon.style.transform = 'rotate(90deg)';
+                } else {
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
